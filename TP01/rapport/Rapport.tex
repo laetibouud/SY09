@@ -1,0 +1,71 @@
+\documentclass[titlepage]{article}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{listings} %code
+\usepackage{graphicx} %images
+\usepackage{float}
+\usepackage[export]{adjustbox} %images
+\usepackage{fullpage} %marges
+\usepackage[usenames,dvipsnames]{xcolor} %couleurs
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{fancyhdr}
+\usepackage{hyphenat}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
+%\usepackage{listings} %code
+%\usepackage[right=2cm]{geometry}%[left=2cm,right=2cm,top=2cm,bottom=2cm]
+%\setlength{\voffset}{1pt}
+\renewcommand{\headheight}{0.6in}
+\setlength{\headwidth}{\textwidth}
+\fancyhead[L]{}% empty left
+\fancyhead[R]{ % right
+   \includegraphics[height=0.53in]{logo_utc.jpg}
+}
+\setlength{\headsep}{0.2in}
+\pagestyle{fancy}
+
+\hyphenpenalty 10000
+
+\newcommand{\refer}{
+$\Rightarrow$
+}
+
+\newcommand{\deter}{
+$\rightarrow$
+}
+
+
+\begin{document}%\sloppy
+\title{SY09 Printemps 2017\\Compte-rendu TP1: Statistique descriptive, Analyse en composantes principales}
+\author{Jiawei ZHU - Laëtitia BOUDEREAUX\\\\(GI04)}
+\date{\today}
+\maketitle
+
+\section{Statistique descriptive}
+\subsection{Notes}
+\subsubsection{}
+Le jeu de données contenu dans le fichier sy02-p2016.csv contient des informations relatives aux
+étudiants inscrits à l’UV SY02 au semestre de printemps 2016. Dans le fichier, nous pouvons compter 296 données sur les étudiants. Chaque donnée décrit 12 attributs: nom de l'étudiant, sa spécialité (branche), son niveau (semestre d'étude), son statut, le dernier diplôme qu'il a obtenu, sa note de médian, le correcteur associé à sa note de médian, sa note de final, le correcteur associé à sa note de final, sa note total et son résultat.
+\paragraph{}
+Certaines données dans ce jeu peuvent être manquantes. Trois types de données manquantes existent:
+\begin{itemize}
+\item Dernier diplome obtenu dans le cas des étudiants étrangers
+\item Notes du médian: si l'étudiant n'est pas venu au médian, il ne peut pas être noté
+\item Notes du final: même cas que pour la note du médian. Cependant, on remarquera que les personnes qui ne sont pas venus au final ont eu une mauvaise note au médian.
+\end{itemize}
+\subsection{Données crabs}
+\section{Conclusion}
+\end{document}
